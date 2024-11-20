@@ -1,0 +1,193 @@
+/* Общие стили */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background: url('background.png') no-repeat center center fixed;
+    background-size: cover;
+    background-color: #2d6a4f; /* Цвет для резервного фона */
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Hero Section */
+.hero {
+    background: rgba(45, 106, 79, 0.8); /* Полупрозрачный слой для текста */
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+    background-image: url('img/hero-bg.jpg'); /* Фон геро-секции */
+    background-size: cover;
+    background-position: center;
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+}
+
+/* Навигация */
+.navbar {
+    background-color: #1b4d3e;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-scrolled {
+    background-color: #163f31;
+}
+
+.navbar-brand {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 15px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #a8dadc;
+}
+
+/* Разделы */
+.section {
+    padding: 60px 0;
+    background-color: rgba(234, 249, 243, 0.9); /* Лёгкий зелёный оттенок */
+}
+
+.section-bg {
+    background-color: rgba(224, 247, 250, 0.9);
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* Стиль для секции с карточками */
+.icon-box {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.icon-box:hover {
+    transform: translateY(-10px);
+}
+
+.icon-box i {
+    color: #2d6a4f;
+    font-size: 40px;
+}
+
+.icon-box h4 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+.icon-box p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Форма обратной связи */
+form input,
+form textarea {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+form button {
+    background-color: #2d6a4f;
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+form button:hover {
+    transform: scale(1.05);
+}
+
+form button:active {
+    transform: scale(1);
+}
+
+/* Отзывы */
+blockquote {
+    background-color: #ffffff;
+    padding: 20px;
+    border-left: 5px solid #2d6a4f;
+    margin: 20px 0;
+    font-style: italic;
+}
+
+blockquote footer {
+    font-size: 14px;
+    text-align: right;
+    color: #2d6a4f;
+}
+
+/* Задний фон для секций */
+.section-bg {
+    background-color: rgba(234, 249, 243, 0.9);
+}
+
+.footer {
+    background-color: #1b4d3e;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Анимации */
+[data-aos="fade-up"] {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+[data-aos="fade-up"].aos-animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+[data-aos="fade-down"] {
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+[data-aos="fade-down"].aos-animate {
+    opacity: 1;
+    transform: translateY(0);
+}
